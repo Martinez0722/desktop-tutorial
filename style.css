@@ -1,5 +1,9 @@
 body{
-    background-color: rgb(208, 224, 203);
+    background-color: rgb(192, 184, 161);
+}
+
+.logo{
+    height: 100px;
 }
 
 .conf{
@@ -9,5 +13,10 @@ body{
 img{
     width: auto;
     height: auto;
+}
+
+.logoFooter{
+    height: 45px;
+    width: 45px;
 }
 
