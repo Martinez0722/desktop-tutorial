@@ -3,7 +3,7 @@ body{
 }
 
 .logo{
-    height: 100px;
+    height: 5em;
 }
 
 .conf{
@@ -40,4 +40,31 @@ img{
 .alinhamento{
     
     text-align: left;
+}
+
+ @media(max-width: 576px){
+    .logo{
+       height: 100%;
+        width: 100%;
+    }
+}
+
+@media(min-width: 768px){
+    .logo{
+        height: 90%;
+        width: 90%;
+    }
+}
+
+@media(max-width: 768px){
+    .formulario{
+        width: 80vw;
+        
+    }
+}
+@media(min-width: > 768px){
+    .formulario{
+        width: 80vw;
+        
+    }
 }

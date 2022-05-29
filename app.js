@@ -16,3 +16,12 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+const nome = document.getElementById("cliente_nome")
+const sobrenome = document.getElementById("client_sobrenome")
+const email= document.getElementById("cliente_email")
+const clientes = document.getElementsByClassName("clientes")
+
+HTML.addEventListener("load",function(){
+    alert("Aoba")
+})
