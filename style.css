@@ -78,12 +78,6 @@ img{
     border-radius: 10px 10px 0px 0px;
 }
 
-.biruta{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .cadastro{
     border-radius: 10px;
 }
@@ -92,16 +86,34 @@ img{
     
     text-align: left;
 }
-.exit{border: none;
+.exit{
+    position: fixed;
+    top: 5vh;
+    left: 5vw;
+    border: none;
     background-color: transparent;
 }
+
+.focus-0{
+    border: none;
+}
+
+.focus-0:focus{
+    outline: 0;
+}
+
+.bg-form{
+    background-image: linear-gradient(to right, rgb(41, 34, 141)10%, rgb(7, 6, 54, 0.644)50%, rgb(33, 14, 117));
+}
+
 .input-quest{
     
     
-    background-color:rgb(192, 184, 161);
+    background-color: rgb(199, 199, 199);
     border: none;
     border-radius: 3px;
     height: 50px;
+    padding-left: 1vw;
 }
 
 
