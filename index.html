@@ -233,18 +233,76 @@
 
     <!--Formulario LOGIN-->
 
+    <div class="bg-form d-block " id="pageLogin">
+        <section class="login d-flex position-relative container  ">
+            <button class="exit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="text-dark bi bi-x-circle-fill" viewBox="0 0 16 16" id="sair">
+                    <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+                </svg>
+                </button>
+            <div class="d-flex col-6 bg-light justify-content-center flex-column cadastro m-auto mt-5 mb-5 shadow-lg  ">
+                    <header class="bg-dark cabecalho col-12 ">
+                        <div class="px-2 py-2  text-white container-fluid">
+                            <div class="container-fluid col-12 ">
+                                <div class="  align-items-center justify-content-center justify-content-lg-end ">
+                                    <div
+                                        class=" align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                                        <img src="./imagens/logoFael (1).png" class="logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                <div class="d-flex justify-content-center align-content-center position-relative">
+                    <h1 class="font title link-secondary mt-5">Login</h1>
+                    
+                </div>
+                <div class="d-flex justify-content-center">
+                    <form class="d-flex  flex-column mt-4 mb-2 col-8">
+                        <label for="email" class="font mb-2">Email:</label>
+                        <input type="email" name="email" id="authEmail" class="input-quest focus-0 col-12 text-black mb-4">
+                        <label for="password" class="font mb-2">Password:</label>
+                        <input type="password" name="password" id="authPassword" class="input-quest focus-0 mb-2 text-black ">
+                        <div class="ocult" id="erroLogin">
+                            <div class="d-flex d-none justify-content-center align-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle m-1 text-danger" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                  </svg>
+                                  <p class="p-0 d-none text-danger">Usuário ou senha incorreta</p>
+                            </div>
+                        </div>
+                        <a href="#" class=" link-secondary text-center fw-bolder text-decoration-none mt-2">Esqueceu sua senha?</a>
+                    </form>
+                </div>
+                <div class="d-flex col-12 justify-content-center mt-4">
+                    <button class="font btn btn-primary col-6 register" id="login">Continuar</button>
+                </div>
+                <p class="link-secondary text-center mt-2 mb-4">Não tem uma conta? <strong onclick="paginaCadastro()" class="cursor">Cadastre-se</strong></p>
+            </div>
+        </section>
+    </div>
+
+
+
+
     <!-- página de cadastro -->
-    <main class="bg-form d-none" id="conteudo">
-            <div class="container" id="pageRegister">
-                <section class="d-flex col-12 position-relative">
-                    <button class="exit position-fixed">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                            class="text-dark bi bi-x-circle-fill" viewBox="0 0 16 16" id="sair">
-                            <path
-                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
-                        </svg>
+    <main class="container d-none " id="conteudo">
+        <div class="row d-flex ">
+            <div class="vh-100  ocult" id="pageRegister">
+                
+                <section class="d-flex  position-relative">
+                    <button class="exit ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="text-dark bi bi-x-circle-fill" viewBox="0 0 16 16" id="sair">
+                        <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+                    </svg>
                     </button>
-                    <div class="shadow-lg d-flex cadastro bg-light justify-content-center flex-column m-auto mt-4 mb-4 col-6">
+                    <div
+                        class="shadow-lg d-flex cadastro bg-light justify-content-center flex-column m-auto mt-4 mb-4 col-7">
                         <header class="bg-dark cabecalho col-12 ">
                             <div class="px-2 py-2  text-white container-fluid">
                                 <div class="container-fluid col-12 ">

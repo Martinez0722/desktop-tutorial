@@ -76,7 +76,7 @@
 //     home.style.display = "block"
 // })
 
-// JQUERY CAROUSEL
+// // JQUERY CAROUSEL
 
 $('.owl-carousel').owlCarousel({
     loop:true,
@@ -94,4 +94,5 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
 
