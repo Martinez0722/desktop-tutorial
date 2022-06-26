@@ -75,13 +75,17 @@ img{
 }
 
 .cabecalho{
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .biruta{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.cadastro{
+    border-radius: 10px;
 }
 
 .alinhamento{
@@ -98,9 +102,6 @@ img{
     border: none;
     border-radius: 3px;
     height: 50px;
-}
-.cadastro{
-    border-radius: 5px;
 }
 
 
