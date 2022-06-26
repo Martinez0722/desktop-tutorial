@@ -1,80 +1,80 @@
-let login = document.getElementById("login")
-let html = document.getElementById("html")
-let conteudo = document.getElementById("conteudo")
-let form = document.getElementById("form")
-let exit = document.getElementById("exit")
-let destaque = document.getElementsByClassName("destaque")
-let barra = document.getElementsByClassName("barra")
-let home = document.getElementById("home")
-let dash = document.getElementById("dash")
-let clientes = document.getElementById("clientes")
-let empresas = document.getElementById("empresas")
-let resultados = document.getElementById("resultados")
-let ativo = false
+// let login = document.getElementById("login")
+// let html = document.getElementById("html")
+// let conteudo = document.getElementById("conteudo")
+// let form = document.getElementById("form")
+// let exit = document.getElementById("exit")
+// let destaque = document.getElementsByClassName("destaque")
+// let barra = document.getElementsByClassName("barra")
+// let home = document.getElementById("home")
+// let dash = document.getElementById("dash")
+// let clientes = document.getElementById("clientes")
+// let empresas = document.getElementById("empresas")
+// let resultados = document.getElementById("resultados")
+// let ativo = false
 
 
 
-home.addEventListener("click", function(){
-    conteudo.style.display = 'block'
-})
+// home.addEventListener("click", function(){
+//     conteudo.style.display = 'block'
+// })
 
-dash.addEventListener("click", function(){
-    conteudo.style.display = 'none'
-})
+// dash.addEventListener("click", function(){
+//     conteudo.style.display = 'none'
+// })
 
-clientes.addEventListener("click", function(){
-    conteudo.style.display = 'none'
-})
+// clientes.addEventListener("click", function(){
+//     conteudo.style.display = 'none'
+// })
 
-empresas.addEventListener("click", function(){
-    conteudo.style.display = 'none'
-})
+// empresas.addEventListener("click", function(){
+//     conteudo.style.display = 'none'
+// })
 
-resultados.addEventListener("click", function(){
-    conteudo.style.display = 'none'
-})
-
-
-//MANIPULANDO O HOVER
+// resultados.addEventListener("click", function(){
+//     conteudo.style.display = 'none'
+// })
 
 
-for (let i = 0; i < barra.length; i++) {
-}
+// //MANIPULANDO O HOVER
+
+
+// for (let i = 0; i < barra.length; i++) {
+// }
  
 
-for (let i = 0; i < destaque.length; i++) {
-    destaque[i].addEventListener('click',function(){
+// for (let i = 0; i < destaque.length; i++) {
+//     destaque[i].addEventListener('click',function(){
         
-        if(ativo == false){
-            this.classList.add('text-white')
-            barra[i].style.display = 'block'
+//         if(ativo == false){
+//             this.classList.add('text-white')
+//             barra[i].style.display = 'block'
                 
-            ativo = true
+//             ativo = true
 
-        }else if(ativo == true){
-            this.classList.remove('text-white')
-            barra[i].style.display = 'none' 
+//         }else if(ativo == true){
+//             this.classList.remove('text-white')
+//             barra[i].style.display = 'none' 
     
-            ativo = false
+//             ativo = false
 
-            }
-        }) 
-    }
-
-
+//             }
+//         }) 
+//     }
 
 
-// FORMULARIO DE LOGIN
 
-login.addEventListener("click", function(){
-    html.style.display = "none"
-    form.style.display = "block"
-})
 
-exit.addEventListener("click", function(){
-    form.style.display ="none"
-    home.style.display = "block"
-})
+// // FORMULARIO DE LOGIN
+
+// login.addEventListener("click", function(){
+//     html.style.display = "none"
+//     form.style.display = "block"
+// })
+
+// exit.addEventListener("click", function(){
+//     form.style.display ="none"
+//     home.style.display = "block"
+// })
 
 // JQUERY CAROUSEL
 
