@@ -7,7 +7,13 @@ body{
     height: 5em;
 }
 
-
+#exit{
+    border: none;
+    position: absolute;
+    background-color: transparent;
+    top: -4%;
+    left: 0;
+}
 
 .conf{
     border: none;
@@ -55,6 +61,12 @@ img{
     width: 45px;
 }
 
+#form{
+    display: none;
+    height: 90vh;
+    margin-top: 7%;
+}
+
 .formulario{
     border-radius: 15px;
     box-shadow: 1px 1px 10px 4px rgb(2, 8, 54);
@@ -63,13 +75,17 @@ img{
 }
 
 .cabecalho{
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .biruta{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.cadastro{
+    border-radius: 10px;
 }
 
 .alinhamento{
@@ -86,9 +102,6 @@ img{
     border: none;
     border-radius: 3px;
     height: 50px;
-}
-.cadastro{
-    border-radius: 5px;
 }
 
 
