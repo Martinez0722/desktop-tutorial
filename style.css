@@ -30,7 +30,7 @@ body{
     background-color: rgba(201, 250, 121, 0.801);
 }
 
-a:after{
+.ordem:after{
     content: '';
     position: absolute;
     bottom: -10px;
@@ -41,7 +41,7 @@ a:after{
     transition: 0.1s;
 }
 
-a:hover:after{
+.ordem:hover:after{
     width: 70%;
 }
 
@@ -76,19 +76,34 @@ img{
     
     text-align: left;
 }
+.exit{border: none;
+    background-color: transparent;
+}
+.input-quest{
+    
+    
+    background-color:rgb(192, 184, 161);
+    border: none;
+    border-radius: 3px;
+    height: 50px;
+}
+.cadastro{
+    border-radius: 5px;
+}
+
 
  @media(max-width: 576px){
-    .logo{
+        .logo{
        height: 100%;
         width: 100%;
     }
 }
 
 @media(min-width: 768px){
-    .logo{
-        height: 90%;
-        width: 90%;
-    }
+        .logo{
+             height: 90%;
+            width: 90%;
+     }
 }
 
 @media(max-width: 768px){
@@ -97,9 +112,9 @@ img{
         
     }
 }
-@media(min-width: > 768px){
-    .formulario{
-        width: 80vw;
+@media(min-width > 768px){
+        .formulario{
+             width: 80vw;
         
-    }
+        }
 }
