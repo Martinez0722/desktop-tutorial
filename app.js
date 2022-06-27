@@ -11,7 +11,7 @@ let inputCad = document.getElementsByClassName("inputCad")
 let campo = document.getElementsByClassName("campo")
 
 
-//MANIPULANDO O HOVER
+// //MANIPULANDO O HOVER
 
 home.addEventListener("click",function(){
     home.classList.add("text-white")
