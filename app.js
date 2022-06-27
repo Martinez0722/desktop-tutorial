@@ -6,6 +6,8 @@ let clientes = document.getElementById("clientes")
 let empresas = document.getElementById("empresas")
 let resultados = document.getElementById("resultados")
 let pageLogin = document.getElementById("pageLogin")
+let login = document.getElementById("login")
+let erroLogin = document.getElementById("erroLogin")
 let pageRegister = document.getElementById("pageRegister")
 let inputCad = document.getElementsByClassName("inputCad")
 let campo = document.getElementsByClassName("campo")
@@ -69,6 +71,14 @@ function paginaLogin() {
     pageLogin.classList.remove("ocult")
     titlePage.innerHTML = "Login"
 }
+
+login.addEventListener("click", () => {
+    if(authEmail.value.length == 0 && authPassword.value.length == 0){
+        erroLogin.classList.remove("ocult")
+    }else{
+        paginaHome()
+    }
+})
 
 //REDIRECIONANDO PARA A PAGINA DE CADASTRO
 
