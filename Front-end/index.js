@@ -90,6 +90,53 @@ function paginaCadastro(){
     titlePage.innerHTML = "Cadastre-se"
 }
 
+//FAZENDO CADASTRO
+
+const init = () => {
+    document.getElementById("cadastro").addEventListener("click", submitform);
+}
+
+const submitform = (e) => {
+    e.preventDefault();
+
+    const data = accessData()
+    console.log(data)    
+    const url = "http://localhost:3000/auth"
+
+    if(!data) {
+        return
+    }
+
+    fetch(`${url}/register`, {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+            "Content-Type": "application/json"
+        },
+        credentials: "same-origin"
+    })
+        .then((response) => {
+            paginaHome()
+            return alert("Cadastro realizado com sucesso!")
+        })
+        .catch((e) => {
+            return console.error(e)
+        })
+}
+
+const accessData = () => {
+    return{
+        "name": nome.value,
+        "sobrenome": sobrenome.value,
+        "email": email.value,
+        "celular": celular.value,
+        "password": senha.value,
+    }
+
+}
+
+init()
+
 //Checando input Cadastro
 
 cadastro.addEventListener("click", () => {
