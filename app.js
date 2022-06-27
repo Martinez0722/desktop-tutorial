@@ -1,80 +1,106 @@
-// let login = document.getElementById("login")
-// let html = document.getElementById("html")
-// let conteudo = document.getElementById("conteudo")
-// let form = document.getElementById("form")
-// let exit = document.getElementById("exit")
-// let destaque = document.getElementsByClassName("destaque")
-// let barra = document.getElementsByClassName("barra")
-// let home = document.getElementById("home")
-// let dash = document.getElementById("dash")
-// let clientes = document.getElementById("clientes")
-// let empresas = document.getElementById("empresas")
-// let resultados = document.getElementById("resultados")
-// let ativo = false
+let titlePage = document.querySelector("title")
+let principalPage = document.getElementById("html")
+let home = document.getElementById("home")
+let dashboard = document.getElementById("dashboard")
+let clientes = document.getElementById("clientes")
+let empresas = document.getElementById("empresas")
+let resultados = document.getElementById("resultados")
+let pageLogin = document.getElementById("pageLogin")
+let pageRegister = document.getElementById("pageRegister")
+let inputCad = document.getElementsByClassName("inputCad")
+let campo = document.getElementsByClassName("campo")
 
+//MANIPULANDO O HOVER
 
+home.addEventListener("click", function(){
+    home.classList.add("text-white")
+    dashboard.classList.remove("text-white")
+    clientes.classList.remove("text-white")
+    empresas.classList.remove("text-white")
+    resultados.classList.remove("text-white")
+})
 
-// home.addEventListener("click", function(){
-//     conteudo.style.display = 'block'
-// })
+dashboard.addEventListener("click", function(){
+    home.classList.remove("text-white")
+    dashboard.classList.add("text-white")
+    clientes.classList.remove("text-white")
+    empresas.classList.remove("text-white")
+    resultados.classList.remove("text-white")
+})
 
-// dash.addEventListener("click", function(){
-//     conteudo.style.display = 'none'
-// })
+clientes.addEventListener("click", function(){
+    home.classList.remove("text-white")
+    dashboard.classList.remove("text-white")
+    clientes.classList.add("text-white")
+    empresas.classList.remove("text-white")
+    resultados.classList.remove("text-white")
+})
 
-// clientes.addEventListener("click", function(){
-//     conteudo.style.display = 'none'
-// })
+empresas.addEventListener("click", function(){
+    home.classList.remove("text-white")
+    dashboard.classList.remove("text-white")
+    clientes.classList.remove("text-white")
+    empresas.classList.add("text-white")
+    resultados.classList.remove("text-white")
+})
 
-// empresas.addEventListener("click", function(){
-//     conteudo.style.display = 'none'
-// })
+resultados.addEventListener("click", function(){
+    home.classList.remove("text-white")
+    dashboard.classList.remove("text-white")
+    clientes.classList.remove("text-white")
+    empresas.classList.remove("text-white")
+    resultados.classList.add("text-white")
+})
 
-// resultados.addEventListener("click", function(){
-//     conteudo.style.display = 'none'
-// })
+//REDIRECIONANDO PARA A PAGINA PRINCIPAL
 
+function paginaHome() {
+    principalPage.classList.remove("ocult")
+    pageLogin.classList.add("ocult")
+    pageRegister.classList.add("ocult")
+    titlePage.innerHTML = "Global Stream"
+}
 
-// //MANIPULANDO O HOVER
+// REDIRECIONANDO PARA A PAGINA DE LOGIN
 
+function paginaLogin() {
+    principalPage.classList.add("ocult")
+    pageRegister.classList.add("ocult")
+    pageLogin.classList.remove("ocult")
+    titlePage.innerHTML = "Login"
+}
 
-// for (let i = 0; i < barra.length; i++) {
-// }
- 
+//REDIRECIONANDO PARA A PAGINA DE CADASTRO
 
-// for (let i = 0; i < destaque.length; i++) {
-//     destaque[i].addEventListener('click',function(){
-        
-//         if(ativo == false){
-//             this.classList.add('text-white')
-//             barra[i].style.display = 'block'
-                
-//             ativo = true
+function paginaCadastro(){
+    principalPage.classList.add("ocult")
+    pageLogin.classList.add("ocult")
+    pageRegister.classList.remove("ocult")
+    titlePage.innerHTML = "Cadastre-se"
+}
 
-//         }else if(ativo == true){
-//             this.classList.remove('text-white')
-//             barra[i].style.display = 'none' 
+//Checando input Cadastro
+
+cadastro.addEventListener("click", () => {
     
-//             ativo = false
+    for (let i = 0; i < inputCad.length; i++) {
 
-//             }
-//         }) 
-//     }
+        if(inputCad[i].value.length == 0){
+            inputCad[i].classList.remove("focus-0")
+            inputCad[i].focus()
+            campo[i].classList.remove("ocult")
+        }else{
+            inputCad[i].classList.add("focus-0")
+            campo[i].classList.add("ocult")
+        }
 
-
-
-
-// // FORMULARIO DE LOGIN
-
-// login.addEventListener("click", function(){
-//     html.style.display = "none"
-//     form.style.display = "block"
-// })
-
-// exit.addEventListener("click", function(){
-//     form.style.display ="none"
-//     home.style.display = "block"
-// })
+        if (termos.checked === true) { 
+            paginaHome()
+        } else {
+          termos.focus()
+        }          
+    }    
+})
 
 // // JQUERY CAROUSEL
 
