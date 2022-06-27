@@ -26,15 +26,6 @@ body{
     position: relative;
 }
 
-.barra{
-    display: none;
-    width: 70%;
-    height: 3px;
-    position: absolute;
-    left: 15%;
-    bottom: -10px;
-    background-color: rgba(201, 250, 121, 0.801);
-}
 
 .ordem:after{
     content: '';
@@ -99,8 +90,20 @@ img{
     border: none;
 }
 
+.campo{
+    color: red;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
 .focus-0:focus{
     outline: 0;
+}
+
+.ocult{
+    display: none;
 }
 
 .bg-form{
